@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="466.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+  <tabs>
+    <Tab text="Technicien">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab>
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="idT" layoutX="164.0" layoutY="41.0" prefHeight="31.0" prefWidth="286.0" />
+                              <TextField fx:id="nameT" layoutX="164.0" layoutY="84.0" prefHeight="31.0" prefWidth="286.0" />
+                              <TextField fx:id="phoneT" layoutX="164.0" layoutY="130.0" prefHeight="31.0" prefWidth="286.0" />
+                              <TextField fx:id="idRefT" layoutX="164.0" layoutY="173.0" prefHeight="31.0" prefWidth="286.0" />
+                              <TextField fx:id="accessCodeT" layoutX="164.0" layoutY="218.0" prefHeight="31.0" prefWidth="286.0" />
+                              <Button fx:id="addT" layoutX="269.0" layoutY="281.0" mnemonicParsing="false" onAction="#addTech" prefHeight="25.0" prefWidth="98.0" text="Ajouter" />
+                              <Label layoutX="41.0" layoutY="47.0" prefHeight="21.0" prefWidth="123.0" text="Id                    :" />
+                              <Label layoutX="41.0" layoutY="90.0" prefHeight="21.0" prefWidth="123.0" text="Nom               :" />
+                              <Label layoutX="41.0" layoutY="136.0" prefHeight="21.0" prefWidth="123.0" text="Téléphone      :" />
+                              <Label layoutX="41.0" layoutY="179.0" prefHeight="21.0" prefWidth="123.0" text="IdRef               :" />
+                              <Label layoutX="41.0" layoutY="224.0" prefHeight="21.0" prefWidth="123.0" text="AccessCode    :" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </content></Tab>
+      <Tab text="Clients">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="idC" layoutX="164.0" layoutY="41.0" prefHeight="31.0" prefWidth="281.0" />
+                              <TextField fx:id="nameC" layoutX="164.0" layoutY="84.0" prefHeight="31.0" prefWidth="281.0" />
+                              <TextField fx:id="phoneC" layoutX="164.0" layoutY="130.0" prefHeight="31.0" prefWidth="281.0" />
+                              <TextField fx:id="creditC" layoutX="164.0" layoutY="173.0" prefHeight="31.0" prefWidth="282.0" />
+                              <TextField fx:id="orderC" layoutX="164.0" layoutY="218.0" prefHeight="31.0" prefWidth="281.0" />
+                              <Button fx:id="addC" layoutX="180.0" layoutY="294.0" mnemonicParsing="false" onAction="#addClient" prefHeight="25.0" prefWidth="115.0" text="Ajouter" />
+                              <Label layoutX="41.0" layoutY="47.0" prefHeight="21.0" prefWidth="123.0" text="#Id            :" />
+                              <Label layoutX="41.0" layoutY="90.0" prefHeight="21.0" prefWidth="123.0" text="Nom          :" />
+                              <Label layoutX="41.0" layoutY="136.0" prefHeight="21.0" prefWidth="123.0" text="Téléphone :" />
+                              <Label layoutX="41.0" layoutY="179.0" prefHeight="21.0" prefWidth="123.0" text="Crédit        :" />
+                              <Label layoutX="41.0" layoutY="224.0" prefHeight="21.0" prefWidth="123.0" text="Choix        :" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </content>
+      </Tab>
+      <Tab text="Machines">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="idM" layoutX="164.0" layoutY="41.0" prefHeight="31.0" prefWidth="282.0" />
+                              <Button fx:id="addM" layoutX="196.0" layoutY="124.0" mnemonicParsing="false" onAction="#addMachine" prefHeight="25.0" prefWidth="84.0" text="Ajouter" />
+                              <Label layoutX="41.0" layoutY="47.0" prefHeight="21.0" prefWidth="123.0" text="Id                    :" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </content>
+      </Tab>
+      <Tab text="Produits">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="387.0" prefWidth="433.0">
+                           <children>
+                              <TextField fx:id="idP" layoutX="164.0" layoutY="41.0" prefHeight="31.0" prefWidth="282.0" />
+                              <TextField fx:id="nameP" layoutX="164.0" layoutY="84.0" prefHeight="31.0" prefWidth="282.0" />
+                              <TextField fx:id="priceP" layoutX="164.0" layoutY="130.0" prefHeight="31.0" prefWidth="281.0" />
+                              <Button fx:id="addP" layoutX="206.0" layoutY="194.0" mnemonicParsing="false" onAction="#addProduct" text="Ajouter" />
+                              <Label layoutX="41.0" layoutY="47.0" prefHeight="21.0" prefWidth="123.0" text="Id                    :" />
+                              <Label layoutX="41.0" layoutY="90.0" prefHeight="21.0" prefWidth="123.0" text="Nom               :" />
+                              <Label layoutX="41.0" layoutY="136.0" prefHeight="21.0" prefWidth="123.0" text="Prix                 :" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </content>
+      </Tab>
+      <Tab text="Choice box">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Untitled Tab 1">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
